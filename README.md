@@ -12,6 +12,21 @@ web application that will act as a task scheduler for simple tasks
 $ npm i
 ```
 
+##Requeriments
+
+For the implementation it is necessary to have Node.js installed.
+
+To start the installation of this service it is necessary to execute in the root of the project npm install.
+
+##Execution
+```bash
+For the initialization of the service, npm start must be executed from the root of the project.
+
+$ npm install 
+
+Note: The API will be running on port 3000 to change it you must modify the bin/www.js file
+```
+
 ## Running the app
 
 ```bash
