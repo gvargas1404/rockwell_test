@@ -1,10 +1,14 @@
 const router = require('express').Router();
-const task = require('../controller/taskactivity');
+const task = require('../handlers/taskactivity');
+const validateTaskParameters = require('../handlers/validateTaskParameters');
 
-router.get('/', function(req, res) {
-    console.log(req.query);
-    var result = task.executeTask(req.query);
-
-    res.json("wenis");
+router.get('/', async function (req, res) {
+    let schedule = req.query.schedule;
+    let website = req.query.website;
+    let resultValidator = await validateTaskParameters.validator(schedule,website);
+    if(resultValidator.isExpressionValid){
+         task.executeTask(schedule,website)
+    }
+    res.json(resultValidator.message);
 });
 module.exports = router;

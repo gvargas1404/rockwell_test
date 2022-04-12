@@ -7,6 +7,6 @@ app.use(express.urlencoded({
     extended: false
 }));
 
-app.use('/content', getTask);
+app.use('/taskScheduler', getTask);
 
 module.exports = app;
