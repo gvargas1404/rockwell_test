@@ -6,19 +6,14 @@
 
 web application that will act as a task scheduler for simple tasks
 
-## Installation
-
-```bash
-$ npm i
-```
-
-##Requeriments
+## Requirements
 
 For the implementation it is necessary to have Node.js installed.
 
 To start the installation of this service it is necessary to execute in the root of the project npm install.
 
-##Execution
+## Execution
+
 ```bash
 For the initialization of the service, npm start must be executed from the root of the project.
 
@@ -37,7 +32,7 @@ $ nodemon bin/www.js
 $ node bin/www.js
 
 ```
-##Test environment
+## Test environment
 
 ```bash
 # successfull case
